@@ -7,9 +7,9 @@ namespace GameUnits
 {
     public abstract class XPUnit:Unit
     {
-        public int XP { get; protected set; }
+        public int XP { get; protected set; } //Accessible also in derived class
 
-         public override float Cost { 
+        public override float Cost { 
             get
             {
                 return 5f;
