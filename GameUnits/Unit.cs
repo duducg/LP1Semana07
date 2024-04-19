@@ -7,7 +7,8 @@ namespace GameUnits
     {
         private int movement;
         public virtual int Health { get; set; } //virtual can be changed
-        public abstract float Cost { get; } //cost cant be changed in derived
+        public abstract float Cost { get; } //cost is now forced to defined in
+        //derived class
 
         public Unit(int movement, int health)
         {
