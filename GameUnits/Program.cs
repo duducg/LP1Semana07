@@ -2,11 +2,24 @@
 
 namespace GameUnits
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            //Test class instance
+            MilitaryUnit mu = new MilitaryUnit(1,10,2);
+            mu.Move();
+            Console.WriteLine(mu.Health);
+            Console.WriteLine(mu.Cost);
+            
+            SettlerUnit su = new SettlerUnit();
+            su.Move();
+            Console.WriteLine(su.Health);
+            Console.WriteLine(su.Cost);
+
+            
+
+
         }
     }
 }
